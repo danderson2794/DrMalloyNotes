@@ -1,0 +1,9 @@
+To install SDL2 on a Mac with the required dependences (assuming you have homebrew installed), you do:
+
+brew install sdl2
+brew install sdl2_ttf
+brew install sdl2_image
+
+I had an issue with the frame generator on Mac and producing a .bmp image (it was either corrupted or didn’t show up at all), but other than that, it’s worked fine for me.
+
+happy coding,

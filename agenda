@@ -1,0 +1,510 @@
+
+Apr 18 (Thu) (3):
+  -- Sound files, mp3:
+     https://online-audio-converter.com/
+
+  -- The following examples are in your repo:
+    -- Painter's algo
+    -- Lights: three versions
+    -- Menus
+    -- flocking
+  -- Frame animation -- Oops
+     frameAnim
+  -- Exam #2
+
+
+Apr 16 (Tue) (4):
+  -- Specs and READMEs for Projects #5 and #6 are in repo
+  -- Handin bucket set up for #5 and #6
+  -- Updated agenda added to your repo.
+
+  -- Exam #2 in one week: Tue, April 23rd.
+
+  -- Review what a constructor does.
+  -- Review copy constructor and copy assignment operator
+  -- What does Move constructor and move assignment operator do?
+
+  -- Can we quantify the increase in efficiency with move vs copy?
+  -- Move vs emplace?!
+     4160assets-2019/examples/cpp/move
+
+  -- I rewrote Restart -- check it out!
+     In this version, I make sure that all explosions complete!
+
+  -- Review sorting vectors and lists:
+    -- talk about Painter's algorithm: slow vs fast!
+       asteroid.png uses 30 frames
+
+  -- Lights, camera, ...
+
+Apr 11 (Thu) (5):
+  -- Drawing sprites:
+     https://www.youtube.com/watch?v=qzvYu48kw5Q&list=PLBIb_auVtBwDCYz94DLRsXQ5nuqL7DiAh
+  -- New Shooting example in your repo!
+  -- shootexplode is a new example in your repo at:
+     4160assets-2019/examples/sdl/shootexplode
+    -- chunk explosion (much better than before -- Thanks Matt)
+       Compare this explosion with the old one!
+
+    -- How did I implement a Two-way sprite
+    -- Why can't we do & for TwoWay?
+
+    -- How did I choreograph shooting?
+    -- I used SPACE for shooting in keyboard bounce loop!
+    -- How did I choreograph collision detection?
+
+    -- Should we overload operator= and copy?
+
+    -- Bullets Class -- too much?
+    -- Bullet and Chunk are exactly the same -- huh???
+
+    -- There is a problem when plane and crow collide!!
+    -- Is "shot" a bad name for a member function?
+    -- is Engine a god??
+    -- How much do we need in XML for TwoWay etc?
+    -- Crow Dying??
+  -- Sound is so hard -- NOT!! Don't forget to add sound.o to Makefile
+
+  -- Project #6 -- Final project
+    -- restart
+    -- lights
+    -- flocking
+    -- menu
+    -- levels
+    -- Painters Algorithm
+    -- Final Presentation??
+
+  -- Move semantics
+
+Apr 9 (Tue) (6):
+  -- Project #3 -- return READMEs
+  -- What's this "story driven?"
+  -- Shooting example:
+     4160assets-2019/examples/sdl/shooting
+
+  -- RVO and NRVO: try to make it NOT happen!
+  -- lvalue, rvalue, lvalue ref, rvalue ref
+
+Apr 4 (Thu) (7):
+  -- We'll have class on Tue and Thur;
+     Be here if you want to be here:
+     James Gee says "Under the right circumstances ..."
+
+  -- Project #3 -- Oops
+     returned on Tue
+
+  -- static_cast -- conversion?
+     Scott Meyer's Item #27
+     cppreference
+     Chris Malloy
+
+  -- Questions about Project #5, Object Pooling, Intro to Move
+  -- rotating crow example in repo shows how to control an
+     animation and the corresponding sprite or multi-frame sprite:
+     4160assets-2019/examples/sdl/rotatingSprite
+
+  -- My youtube channel -- playlist
+  -- I'll add a new playlist about C++11 and C++14: move semantics
+
+  -- Shockingly, sometimes valgrind registers leaks and then on
+     the next run there are NONE!
+
+  -- Mouse example in repo at:
+     4160assets-2019/examples/sdl/mouse
+
+
+Apr 2 (Tue) (8):
+  -- Grades posted for Project #3
+
+  -- Read the Spec for Project #5
+     4160assets-2019/projects/5/paper.pdf
+
+  -- YouTube Video: Shooting
+     https://www.youtube.com/watch?v=lgK-vXBey9w&list=PL9xky4LydsuVanHY4zDxfzXkx28h6fbJA&index=2
+
+  -- YouTube Video: Object Pooling
+     https://www.youtube.com/watch?v=9U3Y_mXG_uA
+
+  -- YouTube video: Explosions, part 1 (Types of explosions):
+     https://youtu.be/MORxXBABBDs
+
+  -- YouTube video: Explosions, part 2 (How to incorporate chunks):
+     https://youtu.be/pHl4Ppuu41k
+
+  -- YouTube Video: Intro to Move Semantics in C++11 
+
+Mar 28 (Thu) (9):
+  -- State of the Course
+  -- SDL_mixer: Sound and Music
+     4160assets-2019/examples/sdl/sound
+     https://www.libsdl.org/projects/SDL_mixer/
+
+Mar 26 (10):
+  -- Change to spec for Project #4: working w/ a partner
+
+  -- To speed up frame capture:
+     check out bottom of engine.cpp at:
+     4160assets-2019/projects/3/tracker
+
+  -- review sort
+  -- review lambda
+  -- capture clause in Lambda
+    -- factorial
+
+  -- explosions
+    -- frames of animation -- do it once (need frames)
+    -- chunks (don't need frames)
+
+Mar 18-- 22: Spring Break!
+
+Mar 14 (11):
+  -- No Class
+
+Mar 12 (12):
+  -- Project #3
+  -- Project #4
+    -- HUDs:
+       4160assets-2019/examples/sdl/huds
+       My Example
+  -- What's in Project #5 and #6?
+  -- Function Objects
+  -- Lambda functions: std::for_each, std::sort
+  -- Sorting:
+    -- types for which < is defined
+    -- objects
+    -- pointers to objects
+  -- Templates/Generics or Move semantics
+
+Mar 7 (13):
+  -- No class On Thursday, March 14th, 2019
+  -- $150 Dell Laptop
+  -- How to make a video: avconv, simplescreenrecorder, et al.
+  -- GoF:
+    -- Program to an Interface not an Implementation
+    -- Favor composition over Inheritance
+    -- How to call a function in a derived class but not in base class:
+       Base * b = new Derived;
+  -- Review Player
+  -- Review Observer and AI
+
+Mar 5 (14):
+  -- No class On Thursday, March 14th, 2019
+  -- Galaga
+  -- Oops -- scale in Tracker Framework
+     Good exercise in code refactoring
+  -- Project #4
+    -- Project Spec
+    -- The Observer Pattern and AI
+    -- Player mechanics
+
+Feb 28 (15):
+  -- Review Exam #1
+  -- Project #3:
+    -- due date extended 3 days
+    -- diff between Meyer's and GoF: how to convert to Meyer's?
+    -- 2-way sprite?!
+    -- what does data-driven mean?
+    -- How to print fps? 
+       4160assets-2019/examples/cpp/sstream
+       Find example: grep for stringstream
+       
+  -- return Exam #1
+
+Feb 26 (16):
+  -- rvo
+  -- Is there a leak in tracker framework!!
+  -- Do parallax scrolling again!
+  -- Rule of 0/3 and preventing compiler generated fns
+  -- Look at answer key for Exam #1
+
+  -- Best of the Best -- Insomnia
+
+Feb 21 (17):
+  -- Exam #1
+
+Feb 19 (18):
+  -- TIP: Linux command to see all installed packages:
+     apt list --installed
+
+  -- TIP: Finding files/dirs in Linux:
+     find . -iname <pattern>
+
+  -- Project #3:
+    -- vtables, vpointers, dynamic vs static dispatching
+       sizeof(Empty)
+    -- Review shape: 
+      -- we remove (erase) items from a vector!
+      -- is this a good idea? How do I know? Meyer's Item #42
+    -- stringstreams
+    -- Tracker:
+      -- review: polymorphic vector
+      -- parallax scrolling
+    -- should you erase from a vector?
+
+  -- Exam #1: 
+    -- Thursday, Feb 21
+    -- your output s/ match exactly with lab machines. Use joeys
+    -- Items for exam: 11, 13, 42
+    -- questions
+
+Feb 14:
+  -- Please go to the course web page and make sure
+     your image is in the Video for project #2
+
+  -- What provision have you made for the event where you 
+     accidentally delete your project?
+
+  -- Free sprites: itch.io
+  -- Reminder: Exam #1 is Feb 21, Thu
+     Any Ques from old tests/quizzes
+     We need to review operator overloading for exam:
+    -- output
+    -- assignment
+    -- Overload string::operator+
+    -- Overload string::operator()
+
+  (1) Inheritiance, virtual, dynamic binding, polymorphism:
+    -- dynBind
+    -- whatsVirtual
+    -- Shape
+    -- Remove items from vector/list
+
+  (2) Project #3
+    -- The Software Life Cycle (Waterfall):
+      -- Requirements
+      -- Design
+      -- Implementation
+      -- Testing
+      -- Deployment
+      -- Maintenance
+    -- UML Class Diagram
+    -- FAQ
+    -- Rule of three/zero
+
+
+Feb 12:
+  (1) Reminder: Exam #1 is Feb 21, Thu
+    -- Covers everything from first class through Feb 19th
+
+  (2) Project #2
+    -- opportunity
+    -- smart
+    -- build something
+
+  (3) Inheritiance, virtual, dynamic binding, polymorphism:
+    -- sizeof
+    -- dynBind
+    -- whatsVirtual
+    -- Shape
+
+  (4) Project #3
+    -- The Software Life Cycle (Waterfall):
+      -- Requirements
+      -- Design
+      -- Implementation
+      -- Testing
+      -- Deployment
+      -- Maintenance
+    -- UML Class Diagram
+    -- FAQ
+
+Feb 7:
+  -- Items in Meyer's "Effective Modern C++"
+    -- undergrads: Items 5, 8, 11, 13, 42
+    -- grads: Items 5, 7-15, and 42
+
+  -- Test #1, one week from today?
+     Recent previous Exams and Quizzes are in your repo
+     Link to academic calendar is in your repo, under materials
+
+  -- Project #2, 3, 4, 5, 6:
+    -- RUN YOUR PROGRAM ON A DEPARTMENT MACHINE BEFORE YOU SUBMIT!!!
+    -- Your program should run on the department systems.
+       You should test for leaks on department systems.
+       Valgrind does NOT work on Macs. Valgrind also is
+       unreliable on VB/VM/ and perhaps WSL.
+       To know if you have leaks compare your valgrind report
+       with the report you get from frameGen -- using same machine!
+    -- What's going on in FrameGen? What constructors/functions do I
+       need or NOT need? I don't get it because Malloy speaks Greek!
+
+    -- Some nice free fonts: link on my web page (thanks Garrett)
+
+    -- Submit whatever we need to (re)produce your image
+    -- If you "new" something you should "delete" it!
+       A class should only delete data attributes that it new-ed
+    -- Projects must be writen in C++, not C (see course policy)
+    -- Free fonts:
+    -- Feel free to use vector2f
+    -- How to add a class to the Makefile?
+    -- I like to keep param lists small:
+       for example, pass an SDL_Rect rather than 4 ints.
+
+  -- Jason Gregory: Game Engine Architecture
+
+  -- GoF Singleton:
+    -- Move copy and assign to private
+    -- write a static instance var to point to instance
+    -- write a static getInstance function
+    -- define the static instance var in global namespace
+  -- Meyer's Singleton
+    -- Move constructors and assign operator to private
+    -- write a static getInstance function; 
+       return reference to local static instance
+  -- Review iterators
+  -- Review Encapsulation -- why?
+  -- Inheritance: Reuse, generalization, specialization
+  -- Project #3
+
+Feb 5:
+  -- art vs dupe
+
+  -- Ques: How do I know if I have a memory leak?
+     Ans:  Compare with reference -- frameGen
+           Which had LEAKS but I fixed them, so you
+           have to do a git pull and look at the new one!
+
+  -- Ques: How do I find my memory leak?
+     Ans:  use --leak-check=full
+
+  -- Effective Modern C++:
+    -- Undergrad Students: 
+    -- Grad Students:
+
+  -- What do I need to install?? I'm so confused.
+     "I tried your example and it won't compile?"
+  -- How do I incorporate my class into the Makefile?
+
+  -- Project #1 -- grades
+    -- be sure to name file correctly
+    -- README s/b called README
+    -- Set the due date on your calendar
+    -- Stop at Noon to return project #1
+
+  -- Preventing silently written compiler generated functions:
+    -- prototype private
+    -- use delete
+    -- Read Item #11
+
+  -- Passing vectors to a function
+  -- Using iterators
+  -- std::list
+  -- Does Box need to obey the rule of 3??
+  -- What to submit for Project #2
+    -- whatever we need to recreate your project; i.e.,
+       we s/b able to cd to your dir, type make, and then "run"
+       Test your project on the department machines.
+
+  -- Meyer's Singleton
+  -- Inheritance
+
+Jan 31:
+  -- Let's draw:
+    -- diagonal
+    -- centered box
+    -- nested boxes, with a box class
+  -- Review constructor calls and vectors:
+    -- Why prefer init over assign?
+    -- What happens when std::vector<string> vec(10);?
+    -- Should I make the conversion constructor explicit?
+      -- emplace
+    -- Should I overload output as a member function, friend?
+  -- ptr v ref
+    -- Meyer's singleton
+    -- We should overload string::operator+
+  -- Inheritance
+    -- should destructors be virtual?
+
+Jan 29:
+  -- Don't eat 5 day old pasta/pizza at room temp!
+  -- Please install SDL ASAP!
+  -- Get a copy of Modern Effective C++, by Scott Meyers
+
+  -- Project #2:
+    -- frameGen dir: use this as a starting point.
+    -- I've made a change for those having trouble running SDL2
+       https://stackoverflow.com/questions/4841908/sdl-init-failure-reason-is-no-available-video-device
+
+  -- vectors:
+    -- whatcalls
+    -- Prefer init to assign!!
+    -- size v capacity -- reserve
+    -- Why not std::vector<string> vec(10);?
+    -- Why not string arr[10];?
+    -- overload output: friend v member v getBuf()?
+    -- ranged for loops
+    -- When to use emplace?
+  -- ptr v ref
+    -- Meyer's singleton
+  -- Inheritance
+
+Jan 24:
+  -- Do a "git pull"
+  -- Project #1 -- grades
+  -- Finally -- video game stuff!
+  -- Project #2
+  -- Show solns from 2018
+
+  -- The Game Loop
+  -- SDL and draw functions:
+    -- points
+    -- lines
+    -- rectangles -- filled (easy, use primitive)
+    -- circles -- filled
+    -- triangles -- filled
+    -- bigCircles
+
+  -- Intro to std::vector
+  -- Review GoF Singleton: 4 steps!
+  -- ref v ptr
+    -- Meyer's Singleton
+
+Jan 22:
+  -- How did I create pic web page?
+  -- review:
+    -- opportunity, smart, build something
+    -- C++98/C++03 vs C++11
+    -- Rule of zero, Rule of 3
+    -- overloading copy assignment
+       4160assets-2019/examples/cpp
+
+  -- Static vars in fns and classes
+  -- The Singleton Pattern
+  -- Overloading output: friend functions, member functions
+  -- Introduction to vectors
+  -- Introduction to Simple DirectMedia Layer (SDL)
+
+Jan 17:
+  -- oops
+  -- Looking ahead to Proj #2
+  -- How do repos work?
+  -- Classes slides: page 15
+  -- Rule of 0 vs Rule of 3
+  -- The many ways of preventing compiler generated
+     member functions (classes: slide #15)
+  -- Static vars in fns and classes
+  -- Overloading output: friend functions, member functions
+
+Jan 15:
+  -- Review: First Class
+    -- Request for gvimrc
+    -- Policies
+    -- Opportunity
+    -- Course Repo: slides, old exams, etc.
+    -- Course Web Page
+
+  -- How to disable touchpad when typing?
+  -- Buckets for Project #1
+  -- Computer access: Netrunner 19.01 Blackbird Linux
+
+  -- Questions about Basics (slides)
+  -- The Rule of Zero
+  -- The Rule of Three
+
+
+First class: Jan 10:
+  -- Course Policy
+    -- go to course web page
+    -- get the repo
+  -- Intro Slides
+  -- Blank Base!

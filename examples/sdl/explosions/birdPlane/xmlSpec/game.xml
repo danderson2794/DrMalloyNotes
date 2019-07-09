@@ -1,0 +1,89 @@
+<?xml version = "1.0"?>
+
+<GameData>
+
+<view>
+  <viewWidth>640</viewWidth>
+  <viewHeight>480</viewHeight>
+</view>
+
+<screen>
+  <worldWidth>640</worldWidth>
+  <worldHeight>480</worldHeight>
+</screen>
+
+<screenTitle>Using Frames for Explosions</screenTitle>
+
+<font name="font">
+  <fontFile>font/pirulen.ttf</fontFile>
+  <fontSize>14</fontSize>
+  <fontRed>205</fontRed>
+  <fontGreen>16</fontGreen>
+  <fontBlue>118</fontBlue>
+  <fontUnused>0</fontUnused>
+</font>
+<maxStringSize>50</maxStringSize>
+
+<back name="back">
+  <backRed>255</backRed>
+  <backGreen>255</backGreen>
+  <backBlue>255</backBlue>
+</back>
+
+<plane>
+  <planeFile>images/Sprites.bmp</planeFile>
+  <planeLoc planeX="320" planeY="110"/>
+
+  <planeFrames>5</planeFrames>
+  <planeFrameInterval>20</planeFrameInterval>
+  <!-- The next parameter is the number of chunks for plane explosion -->
+  <planeChunks>25</planeChunks>
+  <!-- The next parameter is the max distance for a plane chunk -->
+  <planeDistance>100</planeDistance>
+
+  <planeSrcX>1</planeSrcX>
+  <planeSrcY>1</planeSrcY>
+  <planeWidth>121</planeWidth>
+  <planeHeight>72</planeHeight>
+  <planeSpeedX>-200</planeSpeedX>
+  <planeSpeedY>0</planeSpeedY>
+  <planeTransparency>true</planeTransparency>
+</plane>
+
+<crow>
+  <crowFile>images/crow.png</crowFile>
+  <crowLoc crowX="120" crowY="200"/>
+
+  <crowFrames>6</crowFrames>
+  <crowFrameInterval>10</crowFrameInterval>
+  <crowChunks>25</crowChunks>
+  <crowDistance>100</crowDistance>
+
+  <crowSrcX>0</crowSrcX>
+  <crowSrcY>0</crowSrcY>
+  <crowWidth>65</crowWidth>
+  <crowHeight>46</crowHeight>
+  <crowSpeedX>-200</crowSpeedX>
+  <crowSpeedY>0</crowSpeedY>
+  <crowTransparency>true</crowTransparency>
+</crow>
+
+<dyingcrow>
+  <dyingcrowFile>images/dyingcrow.png</dyingcrowFile>
+  <dyingcrowLoc dyingcrowX="120" dyingcrowY="200"/>
+
+  <dyingcrowFrames>6</dyingcrowFrames>
+  <dyingcrowFrameInterval>500</dyingcrowFrameInterval>
+  <dyingcrowChunks>25</dyingcrowChunks>
+  <dyingcrowDistance>100</dyingcrowDistance>
+
+  <dyingcrowSrcX>0</dyingcrowSrcX>
+  <dyingcrowSrcY>0</dyingcrowSrcY>
+  <dyingcrowWidth>58</dyingcrowWidth>
+  <dyingcrowHeight>54</dyingcrowHeight>
+  <dyingcrowSpeedX>4</dyingcrowSpeedX>
+  <dyingcrowSpeedY>100</dyingcrowSpeedY>
+  <dyingcrowTransparency>true</dyingcrowTransparency>
+</dyingcrow>
+
+</GameData>

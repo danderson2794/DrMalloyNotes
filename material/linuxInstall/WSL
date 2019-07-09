@@ -1,0 +1,13 @@
+
+(1) Install WSL and choose Ubuntu:
+    https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+(2) Then install Xming:
+    http://www.straightrunning.com/XmingNotes/trouble.php
+
+(3) Finally, you need to do:
+    export DISPLAY=localhost:0.0”
+    It's best to put the above command at the bottom
+    of your .bashrc
+
+

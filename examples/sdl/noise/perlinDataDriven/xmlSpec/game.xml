@@ -1,0 +1,108 @@
+<?xml version = "1.0"?>
+<GameData>
+<title>Map Generator</title>
+<maxStringSize>50</maxStringSize>
+
+<!-- map window and image size in pixels -->
+<world>
+  <width>1000</width>
+  <height>500</height>
+</world>
+
+<!-- Latitude and longitude lines -->
+<grid>
+	<on>true</on>
+	<cellSize>100</cellSize>
+	<color r = "130" g = "167" b = "196" a = "255"/>
+</grid>
+
+<!-- Circular border around map-->
+<border>true</border>
+
+<!--Rendering options, first applies filter, second smooths transitions -->
+<useExperimentalColors>true</useExperimentalColors>
+<useGradients>false</useGradients>
+
+<!--Random generator seed-->
+<seed>5509</seed>
+
+<!--experimental camera control, distance to move on 'wasd' key press -->
+<MoveOffset>5</MoveOffset>
+
+<!--list of each unique color in your image. Can add or remove colors-->
+<numberOfColors>10</numberOfColors>
+<colors>
+	<color1 name="waterDeep" 		r="130" g="167" b="196" a="255"/>
+	<color2 name="water" 			r="155" g="191" b="226" a="255"/>
+	<color3 name="waterShallow" 	r="170" g="206" b="232" a="255"/>
+	<color4 name="sand" 				r="245" g="196" b="126" a="255"/>
+	<color5 name="grassLow" 		r="160" g="180" b="110" a="255"/>
+	<color6 name="grass" 			r="170" g="196" b="126" a="255"/>
+	<color7 name="grassHigh" 		r="180" g="210" b="140" a="255"/>
+	<color8 name="dirt" 				r="165" g="153" b="126" a="255"/>
+	<color9 name="ice" 				r="220" g="210" b="230" a="255"/>
+	<color10 name="snow" 			r="231" g="230" b="245" a="255"/>
+</colors>
+
+<!--Division determines what values of noise are mapped to which colors.
+	Each pixel has a value 0 to 1. You can alternate back and forth with
+	close divisionVals and colors to get something like 'altitude bands',
+	as seen with divisions 1-6 below.
+	
+	Example: If it is less than the divisionVal of division3, but greater 
+	than division2, it will be the color of division3.
+	
+	Important: Division vals must be in ascending order or else the program
+	will not function correctly. -->
+
+<numberOfDivisions>18</numberOfDivisions>
+<divisions>
+	<division1 colorNumber = "1" divisionVal = "0.36"/>
+	<division2 colorNumber = "2" divisionVal = "0.37"/>
+	<division3 colorNumber = "1" divisionVal = "0.38"/>
+	<division4 colorNumber = "2" divisionVal = "0.39"/>
+	<division5 colorNumber = "1" divisionVal = "0.4"/>
+	<division6 colorNumber = "2" divisionVal = "0.54"/>
+	<division7 colorNumber = "3" divisionVal = "0.6"/>
+	<division8 colorNumber = "4" divisionVal = "0.62"/>
+	<division9 colorNumber = "5" divisionVal = "0.64"/>
+	<division10 colorNumber = "6" divisionVal = "0.67"/>
+	<division11 colorNumber = "5" divisionVal = "0.68"/>
+	<division12 colorNumber = "6" divisionVal = "0.705"/>
+	<division13 colorNumber = "5" divisionVal = "0.71"/>
+	<division14 colorNumber = "6" divisionVal = "0.75"/>
+	<division15 colorNumber = "7" divisionVal = "0.85"/>
+	<division16 colorNumber = "8" divisionVal = "0.95"/>
+	<division17 colorNumber = "9" divisionVal = "0.97"/>
+	<division18 colorNumber = "10" divisionVal = "1.0"/>
+</divisions>
+
+
+<!-- There are four noise images generated which are then layered on top
+	of each other. Larger scale gives more detail for a layer. Larger influence
+	means a layer will contribute more to the final image. 
+	
+	Ex: Layer3 below has small scale(low detail) and high influence, which gives the large
+	continent/ocean shapes. Layer1, 2, and 4 have more detail with less influence,
+	and help to add variation to coastlines.
+	
+	Note: These values can be edited, but there must always be 4 layers for this
+	implementation. -->
+
+<noiseLayer>
+	<layer1 scale = "16" influence = "0.2"/>
+	<layer2 scale = "6" influence = "0.8"/>
+	<layer3 scale = "0.6" influence = "1.4"/>
+	<layer4 scale = "50" influence = "0.04"/>
+</noiseLayer>
+
+<font name="font">
+  <file>fonts/arial.ttf</file>
+  <size>24</size>
+  <red>255</red>
+  <green>255</green>
+  <blue>0</blue>
+  <alpha>0</alpha>
+</font>
+
+</GameData>

@@ -1,0 +1,30 @@
+
+
+The recommended VM is lubuntu, which you can find at:
+https://lubuntu.net/
+
+1. Xubuntu https://xubuntu.org/download/.  This downloads 18.04.  
+You can use a BitTorrent or just download it directly using a mirror.  
+The School of Computing runs Xubuntu 16 for reference. 
+
+2. Download a Virtualization program.  Virtual box or VMware Workstation 
+Player are the big ones. 
+Note.  When that is set up, the directions differ slightly depending on 
+which one you use, but the basic concept is the same
+3.  In the virtualization program, create a new Virtual Machine.  
+This will create a file that will act as another computer on top of 
+your normal computer.
+
+4.  Choose how big you want your "virtual hard disk" to be.  Also 
+assign RAM size.
+
+5.  When it asks for an os, point at the .iso file you downloaded at step 1.
+
+6. Start the VM.  It was act as if you are doing a fresh install, 
+which you are.  Choose to install the OS on the hard disk.  (The 
+VM uses the virtual hard disk you made during setup).  Go through 
+those settings.
+
+7. Done.  You have a VM where you can do all things you would do on a 
+normal computer.  Also, you can delete the iso you downloaded earlier 
+if space is an issue.  The Ubuntu OS is now in the VM 

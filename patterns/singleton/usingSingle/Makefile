@@ -1,0 +1,19 @@
+CXX = clang++
+
+# Warnings frequently signal eventual errors:
+CXXFLAGS=-g -W -Wall -Weffc++ -Wextra -pedantic -O0
+
+OBJS = main.o random.o
+EXEC = run
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+$(EXEC): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJS) $(LDFLAGS)
+
+main.o: main.cpp random.h
+
+clean:
+	rm -rf $(OBJS)
+	rm -rf $(EXEC)

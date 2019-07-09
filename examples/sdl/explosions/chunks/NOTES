@@ -1,0 +1,18 @@
+
+First, to add chunk.* and explodingSprite.* to your game
+directory and to get it to compile do the following:
+
+(1) copy chunk.*, explodingSprite.*, and sprite.* from
+    this directory to the directory that has your game.
+(2) add chunk.o and explodingSprite.o to your Makefile
+(3) change gamedata to gameData wherever necessary
+(4) change RenderContext, on line 37 of Sprite, to ImageFactory
+
+Second, to make an explosion, do the following:
+(1) Add a virtual function, explode, to drawable.h
+(2) Add a virtual function, explode, to MultiSprite
+(3) Add a data attribute, explosion, to multiSprite.h and
+    initialize it in the init list of the constructor
+(4) add chunk information to the game.xml; you can get it
+    from the xml file in this directory
+
